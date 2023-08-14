@@ -119,3 +119,9 @@ body {
 .box-general {
 	@apply p-8 w-full rounded-2xl text-textPrimary bg-gradientBox font-raleway flex flex-col mt-8;
 }
+
+@layer components {
+	.input-checkbox {
+		@apply h-5 w-5 cursor-pointer appearance-none rounded-md border-2 border-gray-100 bg-backgroundSecondary p-0.5 text-textSecondary checked:bg-textPrimary focus:ring-textSecondary;
+	}
+}
