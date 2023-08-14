@@ -8,7 +8,7 @@ export default function CreateNews() {
 
     return (
         <div className='flex flex-col min-h-screen h-auto'>
-            <div className="flex flex-row gap-4 items-center">
+            <div className="flex flex-row gap-4 items-center ">
                 <CircleIcon icon="rocket" />
                 <h1 className="text-lg text-textPrimary">Adicionar notícia</h1>
             </div>
