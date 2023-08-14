@@ -6,7 +6,7 @@ type toogleCheckBoxProps = {
 export default function ToogleCheckbox(props: toogleCheckBoxProps){
     return (
         <div className='flex flex-row items-center'>
-            <h1 className='font-abeezee text-sm my-auto'>{props.title}</h1>
+            <h1 className='font-abeezee text-sm my-auto '>{props.title}</h1>
             <div className=" relative ml-2 mt-1 mr-2 inline-block w-8 select-none align-middle transition duration-200 ease-in my-auto">
                 <input
                     type="checkbox"

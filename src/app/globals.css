@@ -62,7 +62,7 @@ body {
 }
 
 .input-text-new {
-	@apply border border-gray-500 border-solid outline-none focus:border-2 mt-4 text-white;
+	@apply border border-gray-500 border-solid outline-none focus:border-2 mt-4 text-white h-8;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -70,7 +70,6 @@ body {
 	left: calc(50% - 860px / 2 + 178.26px);
 	top: 9.7%;
 	bottom: 88.21%;
-	height: 3rem;
 
 	background: linear-gradient(
 		117.45deg,
