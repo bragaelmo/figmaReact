@@ -44,7 +44,7 @@ export default function CreateStrategies(){
                     <CircleIcon icon="rocket" />
                     <h1 className="text-lg text-textPrimary">Padroes de Análise</h1>
                 </div>
-                <div className="flex flex-col md:flex-row w-full justify-between gap-16 ">
+                <div className="flex flex-col md:flex-row w-full justify-between gap-2 ">
                     <div className="input-group mt-4 w-full">
                         <label className=" input-label-new">Green</label>
                         <select className="w-full input-text-new">
@@ -82,7 +82,7 @@ export default function CreateStrategies(){
                         </select>
                     </div>
                 </div>
-                <div className="flex flex-col md:flex-row w-full justify-between gap-16 ">
+                <div className="flex flex-col md:flex-row w-full justify-between gap-2 ">
                     <div className="input-group mt-4 w-full">
                         <label className=" input-label-new">Posição 6</label>
                         <select className="w-full input-text-new">
@@ -120,7 +120,7 @@ export default function CreateStrategies(){
                         </select>
                     </div>
                 </div>
-                <div className="flex flex-col md:flex-row w-full justify-between gap-16 ">
+                <div className="flex flex-col md:flex-row w-full justify-between gap-2 ">
                     <div className="input-group mt-4 w-full">
                         <label className=" input-label-new">Posição 12</label>
                         <select className="w-full input-text-new">
@@ -158,7 +158,7 @@ export default function CreateStrategies(){
                         </select>
                     </div>
                 </div>
-                <div className="flex flex-col md:flex-row w-full justify-between gap-16 ">
+                <div className="flex flex-col md:flex-row w-full justify-between gap-2 ">
                     <div className="input-group mt-4 w-full">
                         <label className=" input-label-new">Posição 18</label>
                         <select className="w-full input-text-new">
@@ -196,41 +196,14 @@ export default function CreateStrategies(){
                         </select>
                     </div>
                 </div>
-                <div className="flex flex-col md:flex-row w-full justify-between gap-16 ">
-                    <div className="input-group mt-4 w-full">
-                        <label className=" input-label-new">Posição 24</label>
-                        <select className="w-full input-text-new">
-                            <option value="Jogo 1">Dúzia 1/2</option>
-                        </select>
+                <div className="flex flex-col md:flex-row w-full gap-2 items-center ">
+                    <div className=" mt-8 w-full rounded-2xl font-abeezee flex flex-col md:flex-row justify-end">
+
+                        <Button pattern={1} fullWidth className="h-10 float-right rounded-md text-sm px-6 flex flex-row gap-x-4 items-center">
+                            <i className="fa-brands fa-telegram text-textPrimary" /><h1 className="text-sm">Salvar alteraçoes</h1>
+                        </Button>
                     </div>
-                    <div className="input-group mt-4 w-full">
-                        <label className=" input-label-new">Posição 25</label>
-                        <select className="w-full input-text-new">
-                            <option value="Jogo 1">Dúzia 1/2</option>
-                        </select>
-                    </div>
-                    <div className="input-group mt-4 w-full">
-                        <label className=" input-label-new">Posição 26</label>
-                        <select className="w-full input-text-new">
-                            <option value="Jogo 1">Dúzia 1/2</option>
-                        </select>
-                    </div>
-                    <div className="input-group mt-4 w-full">
-                        <label className=" input-label-new">Posição 27</label>
-                        <select className="w-full input-text-new">
-                            <option value="Jogo 1">Dúzia 1/2</option>
-                        </select>
-                    </div>
-                    <div className="input-group mt-4 w-full">
-        
-                    </div>
-                    <div className="input-group mt-4 w-full">
-                    <br></br>
-                    <Button pattern={1} className="float-right rounded-md text-sm font-light w-40">
-                    <i className="fa-brands fa-telegram text-textPrimary" /><h1>Salvar alteraçoes</h1>
-                   </Button>
                     
-                    </div>
                 </div>
             </form>
         </div>
