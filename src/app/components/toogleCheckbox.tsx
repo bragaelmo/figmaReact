@@ -12,9 +12,8 @@ export default function ToogleCheckbox(props: toogleCheckBoxProps){
                     type="checkbox"
                     name={`toogle`}
                     id={`toogle`}
-                    onClick={props.function != undefined ? props.function : undefined}
+                    onChange={props.function != undefined ? props.function : undefined}
                     defaultChecked={props.checked}
-                    checked={props.checked}
                     className={`toggle-checkbox absolute block h-4 w-4 cursor-pointer appearance-none rounded-full border-4 border-red-800 bg-red-800 transition-all duration-500 checked:right-0 checked:border-textGreen checked:bg-textGreen`}
                 />
                 <label
