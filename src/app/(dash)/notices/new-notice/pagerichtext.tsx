@@ -9,7 +9,7 @@ import CircleIcon from "../../../components/circleIcon";
 import React, { useState } from 'react';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
-
+ 
 const modules = { 
     toolbar: [
         [{header: [1,2,3,4,5,6,false]}],
@@ -64,7 +64,7 @@ export default function CreateRoom(){
                     <div className="flex flex-col lg:flex-row bg-gradientBox" >
                         <div className="ml-8 p-8 w-full  md:w-130 rounded-2xl text-textPrimary  font-raleway flex flex-col lg:flex-row" >
                             <div className="input-group mt-2 lg:mt-0 lg:mr-2 flex-grow">
-                            <ReactQuill className="md:h-80" theme="snow" value={value} onChange={() => setValue(e.target.value)} modules={modules} />;
+                                <ReactQuill className="md:h-80" theme="snow" value={value} onChange={() => setValue(e.target.value)} modules={modules} />;
                             </div>
                          </div>
 

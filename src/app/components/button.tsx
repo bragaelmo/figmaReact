@@ -15,7 +15,7 @@ export default function Button({ className, glowed, ...props } : ButtonProps){
         <div>
             {
                 props.pattern == 1 ?
-                <button  onClick={props.function ? props.function : undefined} className={twMerge(`bg-bgGreen text-textPrimary hover:text-textSecondary transition-all duration-300 p-2 rounded-2xl ${glowed ? "shadow-pattern" : ""} ${props.sidebar ? "w-10/12 bg-backgroundSecondary text-start pl-8 mt-4" : ""} ${props.fullWidth ? "w-full" : ""}`, className)}>
+                <button  onClick={props.function ? props.function : undefined} className={twMerge(`bg-bgGreen text-textPrimary hover:text-textSecondary hover:bg-bgGreen/80 transition-all duration-300 p-2 rounded-2xl ${glowed ? "shadow-pattern" : ""} ${props.sidebar ? "w-10/12 bg-backgroundSecondary text-start pl-8 mt-4" : ""} ${props.fullWidth ? "w-full" : ""}`, className)}>
                 {props.icon &&
                 
                 <i className={`${props.icon ? `fa-solid fa-${props.icon}` : ""} mx-auto my-auto text-md mr-2 text-danger`}></i>

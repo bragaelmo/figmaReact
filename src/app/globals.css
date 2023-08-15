@@ -124,3 +124,59 @@ body {
 		@apply h-5 w-5 cursor-pointer appearance-none rounded-md border-2 border-gray-100 bg-backgroundSecondary p-0.5 text-textSecondary checked:bg-textPrimary focus:ring-textSecondary;
 	}
 }
+
+.ql-toolbar .ql-picker-label,
+.ql-toolbar {
+	color: #fff !important;
+}
+.ql-toolbar button {
+	color: #fff !important;
+}
+.ql-toolbar svg {
+	fill: #fff !important;
+}
+.ql-stroke {
+	stroke: #fff !important;
+}
+.ql-picker-options {
+	border-color: rgb(34 38 47) !important;
+}
+
+.ql-toolbar {
+	border-top-left-radius: 1rem !important;
+	border-top-right-radius: 1rem !important;
+}
+.ql-container {
+	border-bottom-left-radius: 1rem !important;
+	border-bottom-right-radius: 1rem !important;
+}
+.react-data-table-component {
+	background-color: transparent !important;
+}
+
+/* Estilo para o cabeçalho da tabela */
+.rdt_TableRow {
+	@apply font-normal text-sm text-textSecondary border-b border-solid border-bgCards;
+	background-color: transparent !important;
+}
+
+/* Estilo para as células da tabela */
+.rdt_TableHead {
+	@apply text-start font-normal text-sm text-textSecondary border-b border-solid border-bgCards;
+	background-color: transparent !important;
+}
+
+.rdt_TableHeadRow {
+	/* @apply text-start font-normal text-sm text-textSecondary border-b border-solid border-bgCards; */
+	@apply text-start font-normal text-sm text-textSecondary border-b border-solid border-bgCards;
+	background-color: transparent !important;
+}
+
+/* Estilo para o corpo da tabela */
+.rdt_TableBody {
+	background-color: transparent !important;
+}
+
+.rdt_TableCell {
+	@apply text-start font-normal text-sm text-textSecondary border-b border-solid border-bgCards;
+}

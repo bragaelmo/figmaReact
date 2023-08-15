@@ -1,4 +1,4 @@
-import CircleIcon from "../../../components/circleIcon";
+import CircleIcon from "../../components/circleIcon";
 
 export default function TableComponent(){
     return (
@@ -11,14 +11,14 @@ export default function TableComponent(){
             </div>
             <div className="box-general font-abeezee" >
                 <table>
-                    <thead className="text-start font-normal text-sm text-textSecondary border-b border-solid border-[#56577A]">
+                    <thead className="text-start font-normal text-sm text-textSecondary border-b border-solid border-bgCards">
                         <th className="text-start font-normal pb-2">Título</th>
                         <th className="text-start font-normal pb-2">Data de Ativação</th>
                         <th className="font-normal pb-2">Dias Ativo</th>
                         <th className="text-start font-normal pb-2">Opções</th>
                     </thead>
                     <tbody className="text-sm">
-                        <tr className="border-b border-solid border-[#56577A]">
+                        <tr className="border-b border-solid border-bgCards">
                             <td className="flex flex-row items-center gap-x-4 pb-4">
                                 <div className="bg-textGreen w-8 h-8 items-center flex rounded-md mt-4"><h1 className="mx-auto my-auto">1</h1></div>
                                 <div className="flex flex-col mt-4">
@@ -30,12 +30,12 @@ export default function TableComponent(){
                  
                             <td>
                                 <div className="flex flex-col gap-y-2">
-                                    <a href="#" className="bg-[#631C06] rounded-md flex flex-row text-xs gap-3 w-32 h-6 "><h1 className="text-center mt-1 ml-6">Deletar Notícia</h1></a>
-                                    <a href="#" className="bg-[#37474F] rounded-md flex flex-row text-xs gap-3 w-32 h-6 "><h1 className="text-center mt-1 ml-6">Editar Notícia</h1></a>
+                                    <a href="#" className="bg-danger rounded-md flex flex-row text-xs gap-3 w-32 h-6 "><h1 className="text-center mt-1 ml-6">Deletar Notícia</h1></a>
+                                    <a href="#" className="bg-bgCards rounded-md flex flex-row text-xs gap-3 w-32 h-6 "><h1 className="text-center mt-1 ml-6">Editar Notícia</h1></a>
                                 </div>
                             </td>
                         </tr>
-                        <tr className="border-b border-solid border-[#56577A]">
+                        <tr className="border-b border-solid border-bgCards">
                             <td className="flex flex-row items-center gap-x-4 pb-4">
                                 <div className="bg-textGreen w-8 h-8 items-center flex rounded-md mt-4"><h1 className="mx-auto my-auto">1</h1></div>
                                 <div className="flex flex-col mt-4">
@@ -47,8 +47,8 @@ export default function TableComponent(){
              
                             <td>
                                 <div className="flex flex-col gap-y-2">
-                                    <a href="#" className="bg-[#631C06] rounded-md flex flex-row text-xs gap-3 w-32 h-6 "><h1 className="text-center mt-1 ml-6">Deletar Notícia</h1></a>
-                                    <a href="#" className="bg-[#37474F] rounded-md flex flex-row text-xs gap-3 w-32 h-6 "><h1 className="text-center mt-1 ml-6">Editar Notícia</h1></a>
+                                    <a href="#" className="bg-danger rounded-md flex flex-row text-xs gap-3 w-32 h-6 "><h1 className="text-center mt-1 ml-6">Deletar Notícia</h1></a>
+                                    <a href="#" className="bg-bgCards rounded-md flex flex-row text-xs gap-3 w-32 h-6 "><h1 className="text-center mt-1 ml-6">Editar Notícia</h1></a>
                                 </div>
                             </td>
                         </tr>

@@ -4,7 +4,9 @@ import CircleIcon from "@/app/components/circleIcon";
 import ToogleCheckbox from "@/app/components/toogleCheckbox";
 import { useState } from "react";
 
+
 export default function  CreateUser(){
+
 
     return (
         <div className='flex flex-col min-h-screen h-auto'>

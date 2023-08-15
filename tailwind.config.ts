@@ -32,7 +32,8 @@ const config: Config = {
         "backgroundSecondary": "#22262F",
         "bgGreen": "#077E71",
         "textGreen": "#11BCA9",
-        "bgCards": "#414C644D"
+        "bgCards": "#414C644D",
+        "danger": "#631C06"
       },
       border: {
         "test": "1px solid"
