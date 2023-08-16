@@ -68,8 +68,11 @@ export default function ResultComponent(){
         },
         {
             name: 'GT',
-            selector: 'gTR',
-            align: 'left'
+            selector: 'gt',
+            align: 'left',
+            cell: (row: any) => (
+                <p>{row.gt}%</p>
+            )
         },
         {
             name: 'RT',
@@ -78,8 +81,11 @@ export default function ResultComponent(){
         },
         {
             name: 'GT%',
-            selector: 'gt',
-            align: 'left'
+            selector: 'gtp',
+            align: 'left',
+            cell: (row: any) => (
+                <p>{row.gtp}%</p>
+            )
         },
         {
             name: 'Opções',
