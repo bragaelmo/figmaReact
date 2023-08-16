@@ -1,3 +1,4 @@
+"use client";
 import CircleIcon from "../../components/circleIcon";
 
 export default function TableComponent(){

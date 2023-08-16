@@ -126,7 +126,7 @@ export default function ResultsStrategy(){
             </div> 
             <div className="grid grid-rows-3 grid-flow-col gap-4">
             <div className="row-span-3 p-4">
-                <SemiCircleProgressBar subtitle={20} percent={68} />
+                <SemiCircleProgressBar  percent={68} />
             </div>
             <div className="col-span-1 p-10">
                 <h1 className="absolute text-lg text-textPrimary mt-6 inset-x-[630px]">Resultados de Hoje</h1>
@@ -151,7 +151,7 @@ export default function ResultsStrategy(){
 
             <div className="grid grid-rows-3 grid-flow-col gap-4">
                 <div className="row-span-3 p-4">
-                    <SemiCircleProgressBar subtitle={20} percent={68} />
+                    <SemiCircleProgressBar percent={68} />
                 </div>
                 <div className="col-span-1 p-10">
                     <h1 className="absolute text-lg text-textPrimary mt-6 inset-x-[630px]">Resultados Totais</h1>

@@ -1,4 +1,5 @@
 'use client';
+import Button from "@/app/components/button";
 import CircleIcon from "../../../components/circleIcon";
 import { useState } from 'react';
 import DataTable from "react-data-table-component";
@@ -91,9 +92,11 @@ export default function ResultComponent(){
             name: 'Opções',
             cell: (row: any) => (
                 <div className="flex flex-col gap-y-2">
-                    <a href="#" className="bg-bgGreen rounded-md flex flex-row text-xs gap-3 w-32 h-6 "><h1 className="text-center mt-1 ml-6">Ver Detalhes</h1></a>
+                    <Button pattern={1} className=" text-xs rounded-md items-center flex-nowrap w-24"><h1 className="text-center">Ver Detalhes</h1></Button>
+                    {/* <a href="#" className="bg-bgGreen rounded-md flex flex-row text-xs gap-3 w-24 h-6 items-center justify-center text-textPrimary "></a> */}
                 </div>
-            )
+            ),
+            center: true
         }
     ];  
     const dataTableStyles = {
@@ -128,7 +131,7 @@ export default function ResultComponent(){
                     <h1 className="text-lg text-textPrimary">Resultados de estratégias</h1>
                 </div>
             </div>
-            <div className="box-general font-abeezee" >
+            <div className="box-general font-abeezee " >
                 <DataTable
                 data={data}
                 columns={columnsFilled}
@@ -136,13 +139,13 @@ export default function ResultComponent(){
                 customStyles={dataTableStyles}
                 />
             </div>
-                <div className="ml-[1300px] mt-2  font-[ABeeZee]">
+                {/* <div className="ml-[1300px] mt-2  font-[ABeeZee]">
                    {
                     pages.map((pg,i)=>(
                         <button className="h-4 w-6 hover:text-[#11BCA9]" key={i}>{pg.page}</button>
                     ))
                    }
-                </div>
+                </div> */}
         </div>
     )
 }
