@@ -2,12 +2,13 @@
 import Box from '../../../../components/box'
 import SemiCircleProgressBar from '../../../../components/semiCircleProgressBar';
 import CircleIcon from "../../../../components/circleIcon";
+import DataTable from "react-data-table-component";
 
 export default function ResultsStrategy(){
     const data = [
         {
             id: 1,
-            data: "08/08",
+            data: "08   /08",
             greensg:2,
             g1: 3,
             g2: 5,
@@ -34,6 +35,88 @@ export default function ResultsStrategy(){
             gtp: 80
         }
     ];
+    const columnsFilled = [
+        {
+            name: 'Data',
+            selector: 'data',
+            cell: (row: any) => (
+                <h1 className="text-sm text-textPrimary">{row.data}</h1>
+            )
+        },
+        {
+            name: 'GREEN SG',
+            selector: 'greensg'
+        },
+        {
+            name: 'G1',
+            selector: 'g1',
+            align: 'left'
+        },
+        {
+            name: 'G2',
+            selector: 'g2',
+            align: 'left'
+        },
+        {
+            name: 'G4',
+            selector: 'g4',
+            align: 'left'
+        },        
+        {
+            name: 'GD',
+            selector: 'gd',
+            align: 'left'
+        },
+        {
+            name: 'RD',
+            selector: 'rd',
+            align: 'left'
+        },
+        {
+            name: 'GD%',
+            selector: 'gd',
+            align: 'left',
+            cell: (row: any) => (
+                <p>{row.gd}%</p>
+            )
+        },
+        {
+            name: 'GT',
+            selector: 'gt',
+            align: 'left'
+        },
+        {
+            name: 'RT',
+            selector: 'rt',
+            align: 'left'
+        },
+        {
+            name: 'GT%',
+            selector: 'gtp',
+            align: 'left',
+            cell: (row: any) => (
+                <p>{row.gtp}%</p>
+            )
+        }
+    ]; 
+    const dataTableStyles = {
+        table: {
+          style: {
+            backgroundColor: '#brbrbr', 
+          },
+        },
+        header: {
+          style: {
+            backgroundColor: 'transparent', 
+            color: '#11BCA9'
+          },
+        },
+        cells: {
+          style: {
+            backgroundColor: 'transparent',
+          },
+        },
+      };
     
     return (
         <div className='flex flex-col min-h-screen h-auto'>
@@ -97,82 +180,13 @@ export default function ResultsStrategy(){
               <a href="#" className="bg-bgGreen text-white rounded-2xl flex flex-row text-xs gap-3 w-32 h-6 "><h1 className="text-center mt-1 ml-6">EXPORTAR XLS</h1></a>
             </div>
             <div className="box-general font-abeezee" >
-                <table>
-                    <thead className="text-start font-normal text-sm text-textSecondary border-b border-solid border-[#56577A]">
-                        <th className="text-start font-normal pb-2 text-[#11BCA9]">Data</th>
-                        <th className="text-start font-normal pb-2 text-[#11BCA9]">GREEN SG</th>
-                        <th className="font-normal pb-2 text-[#11BCA9]">G1</th>
-                        <th className="font-normal pb-2 text-[#11BCA9]">G2</th>
-                        <th className="font-normal pb-2 text-[#11BCA9]">G4</th>
-                        <th className="font-normal pb-2 text-[#11BCA9]">GD</th>
-                        <th className="font-normal pb-2 text-[#11BCA9]">RD</th>
-                        <th className="font-normal pb-2 text-[#11BCA9]">GD%</th>
-                        <th className="font-normal pb-2 text-[#11BCA9]">GT</th>
-                        <th className="font-normal pb-2 text-[#11BCA9]">RT</th>
-                        <th className="font-normal pb-2 text-[#11BCA9]">GT%</th>
-                    </thead>
-                    <tbody className="text-sm">
-                        <tr className="border-b border-solid border-[#56577A]">
-                            <td className="flex flex-row items-center gap-x-4 pb-4">
-                                <div className="flex flex-col mt-4">
-                                    <h1 className="text-sm text-textPrimary">08/08</h1>
-                                </div>
-                            </td>
-                            <td className="text-gray-400">3</td>
-                            <td><h1 className="text-center text-base">5</h1></td>
-                            <td><h1 className="text-center text-base ml-1">10</h1></td>
-                            <td><h1 className="text-center text-base space-x-10 ml-3">5</h1></td>
-                            <td><h1 className="text-center">5</h1></td>
-                            <td><h1 className="text-center">10</h1></td>
-                            <td><h1 className="text-center">80%</h1></td>
-                            <td><h1 className="text-center">80</h1></td>
-                            <td><h1 className="text-center">10</h1></td>
-                            <td><h1 className="text-center">80%</h1></td>
-                        </tr>
-                        <tr className="border-b border-solid border-[#56577A]">
-                            <td className="flex flex-row items-center gap-x-4 pb-4">
-                                <div className="flex flex-col mt-4">
-                                <h1 className="text-sm text-textPrimary">07/08</h1>
-                                </div>
-                            </td>
-                            <td className="text-gray-400">3</td>
-                            <td><h1 className="text-center text-base">5</h1></td>
-                            <td><h1 className="text-center text-base ml-1">10</h1></td>
-                            <td><h1 className="text-center text-base space-x-10 ml-3">5</h1></td>
-                            <td><h1 className="text-center">5</h1></td>
-                            <td><h1 className="text-center">10</h1></td>
-                            <td><h1 className="text-center">80%</h1></td>
-                            <td><h1 className="text-center">80</h1></td>
-                            <td><h1 className="text-center">10</h1></td>
-                            <td><h1 className="text-center">80%</h1></td>
-
-                        </tr>
-                        <tr className="border-b border-solid border-[#56577A]">
-                            <td className="flex flex-row items-center gap-x-4 pb-4">
-                                <div className="flex flex-col mt-4">
-                                <h1 className="text-sm text-textPrimary">06/08</h1>
-                                </div>
-                            </td>
-                            <td className="text-gray-400">3</td>
-                            <td><h1 className="text-center">5</h1></td>
-                            <td><h1 className="text-center">10</h1></td>
-                            <td><h1 className="text-center">5</h1></td>
-                            <td><h1 className="text-center">5</h1></td>
-                            <td><h1 className="text-center">10</h1></td>
-                            <td><h1 className="text-center">80%</h1></td>
-                            <td><h1 className="text-center">80</h1></td>
-                            <td><h1 className="text-center">10</h1></td>
-                            <td><h1 className="text-center">80%</h1></td>
-             
-                        </tr>
-                    </tbody>
-                </table>
-                </div>
-
-
-
-
-
+                <DataTable
+                data={data}
+                columns={columnsFilled}
+                noHeader={true}
+                customStyles={dataTableStyles}
+                />
+            </div>
         </div>
       );
       
