@@ -1,5 +1,5 @@
 'use client';
-import Box from '../../../../components/box'
+import Box from '../../../../components/boxnew'
 import SemiCircleProgressBar from '../../../../components/semiCircleProgressBar';
 import CircleIcon from "../../../../components/circleIcon";
 import DataTable from "react-data-table-component";
@@ -120,11 +120,11 @@ export default function ResultsStrategy(){
     
     return (
         <div className='flex flex-col min-h-screen h-auto'>
-          <div className="flex flex-row gap-4 items-center">
-            <CircleIcon icon="rocket" />
-            <h1 className="text-lg text-textPrimary">Resultados Detalhados da Estratégia 1</h1>
-          </div> 
-        <div className="grid grid-rows-3 grid-flow-col gap-4">
+            <div className="flex flex-row gap-4 items-center">
+                <CircleIcon icon="rocket" />
+                <h1 className="text-lg text-textPrimary">Resultados Detalhados da Estratégia 1</h1>
+            </div> 
+            <div className="grid grid-rows-3 grid-flow-col gap-4">
             <div className="row-span-3 p-4">
                 <SemiCircleProgressBar subtitle={20} percent={68} />
             </div>
